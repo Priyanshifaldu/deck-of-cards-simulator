@@ -1,76 +1,185 @@
-# Java-assignment-4
+# Deck of Cards Simulator
 
+A Java-based Deck of Cards Simulator that models a standard deck of playing cards using object-oriented programming principles. The project demonstrates card representation, deck management, and common card operations through a modular and reusable design.
 
-# Overview
+---
 
-This Java program simulates a deck of 52 playing cards, allowing various operations such as shuffling, dealing cards, searching for specific cards, and displaying cards based on suits or ranks.
+## Overview
+
+Playing cards provide an excellent example for learning object-oriented programming concepts. This project models individual cards and a complete deck while demonstrating class design, encapsulation, and object interaction.
+
+The application focuses on:
+
+- Card Representation
+- Deck Management
+- Object-Oriented Programming
+- Data Organization
+- Java Application Development
+
+---
 
 ## Features
 
-1) Create a deck of 52 standard playing cards
+- Create and manage playing cards
+- Generate a standard deck
+- Store card information
+- Perform deck operations
+- Object-oriented implementation
+- Modular and reusable design
 
-2) Print the entire deck
+---
 
-3) Print a specific card
+## Technologies Used
 
-4) Shuffle the deck
+### Programming Language
 
-5) Deal 5 random cards
+- Java
 
-6) Find a specific card in the deck
+### Concepts
 
-7) Display all cards of a given suit
+- Object-Oriented Programming (OOP)
+- Classes and Objects
+- Encapsulation
+- Collections
+- Modular Design
 
-8) Display all cards of a given rank
+---
 
-## Class Descriptions
+## Project Structure
 
-a) Card
+```text
+deck-of-cards-simulator/
+│
+├── Main.java
+├── Card.java
+├── Deck.java
+└── README.md
+```
 
-Represents an individual playing card with a rank and a suit.
+---
 
-Overrides toString() to display the card in "Rank of Suit" format.
+## File Description
 
-b) Deck
+### Card.java
 
-Manages the deck of 52 cards.
+Represents an individual playing card with properties such as rank and suit.
 
-Methods:
+### Deck.java
 
-1) createDeck(): Initializes the deck.
+Manages a collection of cards and provides deck-related operations.
 
-2) printDeck(): Prints all cards in the deck.
+### Main.java
 
-3) printCard(Card card): Prints a specific card.
+Entry point of the application used to demonstrate card and deck functionality.
 
-4) sameCard(String suit): Displays all cards of a given suit.
-   
-5)compareCard(String rank): Displays all cards of a given rank.
+---
 
-6) findCard(String rank, String suit): Checks if a specific card exists in the deck.
+## Deck Model
 
-7) dealCard(): Deals 5 random cards from the deck.
+A standard deck consists of:
 
-8) shuffleDeck(): Randomizes the deck order.
+- 52 Playing Cards
+- 4 Suits
+  - Hearts
+  - Diamonds
+  - Clubs
+  - Spades
+- 13 Ranks per Suit
 
-Menu Options
+---
 
-1) When running the program, the user can choose from the following options:
+## How to Run
 
-2) Print the deck
+### Compile
 
-3) Shuffle the deck
+```bash
+javac *.java
+```
 
-4) Deal 5 random cards
+### Execute
 
-5) Find a specific card
+```bash
+java Main
+```
 
-6) Display all cards of a given suit
+---
 
-7) Display all cards of a given rank
+## Sample Workflow
 
-8) Pick 2 random cards
+```text
+Create Deck
+      │
+      ▼
+Generate Cards
+      │
+      ▼
+Store in Deck
+      │
+      ▼
+Perform Operations
+      │
+      ▼
+Display Results
+```
 
-9) Distribute cards to 3 players
+---
 
-10) Exit the program
+## OOP Concepts Demonstrated
+
+### Encapsulation
+
+Card properties are maintained within dedicated classes.
+
+### Abstraction
+
+Deck operations are separated from card representation.
+
+### Modularity
+
+Card and deck functionality are implemented independently.
+
+### Reusability
+
+Classes can be reused in larger card game applications.
+
+---
+
+## Learning Outcomes
+
+This project demonstrates:
+
+- Java Programming Fundamentals
+- Object-Oriented Programming
+- Class Design
+- Data Modeling
+- Collection Management
+
+---
+
+## Future Enhancements
+
+- Card Shuffling
+- Card Drawing
+- Multiple Deck Support
+- Blackjack Simulation
+- Poker Hand Evaluation
+- GUI-Based Card Game
+- Multiplayer Support
+
+---
+
+## Author
+
+**Priyanshi Faldu**
+
+Bachelor of Technology (B.Tech)
+
+Artificial Intelligence and Machine Learning
+
+Symbiosis Institute of Technology, Pune
+
+---
+
+## License
+
+This project is developed for academic and educational purposes.
